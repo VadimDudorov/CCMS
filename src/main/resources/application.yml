@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/ccms_db
+    username: postgres
+    password: qweasdzxc
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database: PostgreSql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  liquibase:
+    url: jdbc:postgresql://localhost:5433/ccms_db
+    user: postgres
+    password: qweasdzxc
+    enabled: true
+    change-log: classpath:db/changelog/Changelog.xml
+secret.key: "0123456789abcdef"

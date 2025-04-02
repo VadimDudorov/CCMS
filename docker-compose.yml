@@ -1,0 +1,11 @@
+version: "3.1"
+services:
+  postgresdb:
+    container_name: ccmspostgresql
+    image: postgres
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: ccms_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: qweasdzxc
