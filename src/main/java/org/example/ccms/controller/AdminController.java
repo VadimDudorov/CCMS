@@ -117,7 +117,7 @@ public class AdminController {
     @ApiResponse(
             responseCode = "200"
     )
-    @GetMapping("/check-card")
+    @GetMapping("/check-card-admin")
     public List<CardTransactionResponse> getCheckUser(
             @Parameter(description = "Идентификатор пользователя")
             @NotNull(message = "Отсутствует userId")

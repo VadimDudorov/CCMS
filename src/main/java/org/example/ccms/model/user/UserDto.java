@@ -4,7 +4,9 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
-public record UserDto(@NotBlank(message = "Параметр firstName обязателен для заполнения")
+public record UserDto(@NotNull(message = "Параметр userId обязателен для заполнения")
+                      Long userId,
+                      @NotBlank(message = "Параметр firstName обязателен для заполнения")
                       String firstName,
                       @NotBlank(message = "Параметр lastName обязателен для заполнения")
                       String lastName,

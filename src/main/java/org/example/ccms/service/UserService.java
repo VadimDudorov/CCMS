@@ -65,7 +65,7 @@ public class UserService {
     }
 
     @Transactional
-    public Boolean getCardBlocked(Long cardId) {
+    public Boolean patchCardBlocked(Long cardId) {
         return cardsRepository.updateUseCardBlocked(cardId);
     }
 
